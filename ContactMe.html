@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conact Me (Assignment 2)</title>
+</head>
+<body>
+    <h2>Get to know me</h2>
+    <p><iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/FP-pRxPX3aw?si=puv-2ohACNae9zWH" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe></p>
+    
+    <h2>Reach Out</h2>
+    <form name="feedback">
+        <fieldset>
+            <legend>My Form</legend>
+            <p>First Name:<input type="text" name="fname" required placeholder="anonymous"></p>
+            <p>Last Name:<input type="text" name="lname" required placeholder="anonymous"></p>
+            <p>Email: <input type="email" name="mail" placeholder="name@domain.com"></p>
+            <p>Would you recommend my site?</p>
+            <p><input type="radio" name="recommend" value="yes">Yes</p> 
+            <p><input type="radio" name="recommend" value="no">No</p>
+            <p>What is your favorite website? <select name="favWeb">
+                <option value="Google">Google</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="this">This one :)</option>
+            </select></p>
+            <p>Rate this website on a scale of 1-10</p>
+            <p><input type="range" name="rating" min="1" max="10"></p>
+            <p>Any additional comments? <br><textarea name="comment"></textarea></p>
+            <p><input type="submit" name="submit"></p>
+            <p><button type="button" name="button" onclick="alert('Website seleted; Credit Cards stolen')">Evil Submit Button</button></p>
+        </fieldset>
+    </form>
+</body>
+</html>
