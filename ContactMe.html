@@ -1,40 +1,79 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Conact Me (Assignment 2)</title>
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 </head>
+
 <body>
-    <h2>Get to know me</h2>
-    <p><iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/FP-pRxPX3aw?si=puv-2ohACNae9zWH" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen></iframe></p>
-    
-    <h2>Reach Out</h2>
-    <form name="feedback">
-        <fieldset>
-            <legend>My Form</legend>
-            <p>First Name:<input type="text" name="fname" required placeholder="anonymous"></p>
-            <p>Last Name:<input type="text" name="lname" required placeholder="anonymous"></p>
-            <p>Email: <input type="email" name="mail" placeholder="name@domain.com"></p>
-            <p>Would you recommend my site?</p>
-            <p><input type="radio" name="recommend" value="yes">Yes</p> 
-            <p><input type="radio" name="recommend" value="no">No</p>
-            <p>What is your favorite website? <select name="favWeb">
-                <option value="Google">Google</option>
-                <option value="Facebook">Facebook</option>
-                <option value="Twitter">Twitter</option>
-                <option value="this">This one :)</option>
-            </select></p>
-            <p>Rate this website on a scale of 1-10</p>
-            <p><input type="range" name="rating" min="1" max="10"></p>
-            <p>Any additional comments? <br><textarea name="comment"></textarea></p>
-            <p><input type="submit" name="submit"></p>
-            <p><button type="button" name="button" onclick="alert('Website seleted; Credit Cards stolen')">Evil Submit Button</button></p>
-        </fieldset>
-    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="navbar">
+                    <h1>Links</h1>
+                    <ul>
+                        <li><a href="https://www.usca.edu/" target="blank">USCA Main Website</a></li>
+                        <li><a href="#assingment">Assignement Section</a></li>
+                        <li><a href="#contact">Contact Information Section</a></li>
+                        <li><a href="https://catoftheday.com/" target="blank">Cats</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <h2>Get to know me</h2>
+                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FP-pRxPX3aw?si=puv-2ohACNae9zWH"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            </div>
+
+
+
+            <div class="col">
+                <h2>Reach Out</h2>
+                <form name="feedback">
+                    <fieldset>
+                        <legend>My Form</legend>
+                        <p>First Name:<input type="text" name="fname" required placeholder="anonymous"></p>
+                        <p>Last Name:<input type="text" name="lname" required placeholder="anonymous"></p>
+                        <p>Email: <input type="email" name="mail" placeholder="name@domain.com"></p>
+                        <p>Would you recommend my site?</p>
+                        <p><input type="radio" name="recommend" value="yes">Yes</p>
+                        <p><input type="radio" name="recommend" value="no">No</p>
+                        <p>What is your favorite website? <select name="favWeb">
+                                <option value="Google">Google</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Twitter">Twitter</option>
+                                <option value="this">This one :)</option>
+                            </select></p>
+                        <p>Rate this website on a scale of 1-10</p>
+                        <p><input type="range" name="rating" min="1" max="10"></p>
+                        <p>Any additional comments? <br><textarea name="comment"></textarea></p>
+                        <p><input type="submit" name="submit"></p>
+                        <p><button type="button" name="button"
+                                onclick="alert('Website deleted; Credit Cards stolen')">Evil Submit Button</button></p>
+                    </fieldset>
+                </form>
+                <!--Bootstrap JS and POP-->
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                    crossorigin="anonymous"></script>
+            </div>
+        </div>
+
+
+    </div>
 </body>
+
 </html>
