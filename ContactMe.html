@@ -13,13 +13,13 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="navbar">
-                    <h1>Links</h1>
-                    <ul>
-                        <li><a href="https://www.usca.edu/" target="blank">USCA Main Website</a></li>
-                        <li><a href="#assingment">Assignement Section</a></li>
-                        <li><a href="#contact">Contact Information Section</a></li>
-                        <li><a href="https://catoftheday.com/" target="blank">Cats</a></li>
+                <div class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <h1 class="d-none">Links</h1>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="https://www.usca.edu/" target="blank">USCA Main Website</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#assingment">Assignement Section</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Information Section</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://catoftheday.com/" target="blank">Cats</a></li>
                     </ul>
                 </div>
             </div>
@@ -27,9 +27,8 @@
 
         <div class="row">
             <div class="col">
-
-                <h2>Get to know me</h2>
-                <p><iframe width="560" height="315" src="https://www.youtube.com/embed/FP-pRxPX3aw?si=puv-2ohACNae9zWH"
+                <h2 class = "d-none">Get to know me</h2>
+                <p><iframe class="mt-3 border rounded-3" width="560" height="315" src="https://www.youtube.com/embed/FP-pRxPX3aw?si=puv-2ohACNae9zWH"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
@@ -38,10 +37,45 @@
 
 
             <div class="col">
-                <h2>Reach Out</h2>
+                <h2 class="d-none">Reach Out</h2>
                 <form name="feedback">
                     <fieldset>
                         <legend>My Form</legend>
+                        
+                        <div class="form-floating mb-2">
+                            <input class="form-control" type="text" id="fname" placeholder="First">
+                            <label class="form-label" for="fname">First Name:</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" type="text" id="lname" placeholder="Last">
+                            <label class="form-label" for="lname">Last Name:</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" type="email" id="email" placeholder="email">
+                            <label class="form-label" for="email">Email:</label>
+                        </div>
+                        
+                        <p>Do you like my website?</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="yes" name="recomend" value="">
+                            <label class="form-check-label" for="yes">Yes</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="no" name="recomend" value="">
+                            <label class="form-check-label" for="no">No</label>
+                        </div>
+
+
+                        <p>What is your favorite website?</p>
+                        <select class="form-control">
+                            <option>Google</option>
+                            <option>Twitter</option>
+                            <option>Facebook</option>
+                            <option>This one :)</option>
+                        </select>
+                        <!--
                         <p>First Name:<input type="text" name="fname" required placeholder="anonymous"></p>
                         <p>Last Name:<input type="text" name="lname" required placeholder="anonymous"></p>
                         <p>Email: <input type="email" name="mail" placeholder="name@domain.com"></p>
@@ -60,6 +94,7 @@
                         <p><input type="submit" name="submit"></p>
                         <p><button type="button" name="button"
                                 onclick="alert('Website deleted; Credit Cards stolen')">Evil Submit Button</button></p>
+                        -->
                     </fieldset>
                 </form>
                 <!--Bootstrap JS and POP-->
