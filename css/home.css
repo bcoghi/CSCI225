@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Variables */
+:root{
+    --header-background: #333;
+    --default-background:beige;
+}
+
+/* Layout */
+footer{
+    position:fixed;
+    bottom:0%;
+    left:0%;
+    width:100%;
+}
+div.navbar{
+    position:fixed;
+    width:100%;
+    height:8vh;
+    top:0;
+    left:0;
+}
+
+div.introduction img{
+    display:none;
+}
+div.navbar h1{
+    display:none;
+}
+div.introduction h1{
+    position:fixed;
+    bottom:75vh;
+    left:38vw;
+    
+    visibility:visible;
+    background-color: var(--header-background);
+}
+div.assingment h1{
+    position:fixed;
+    bottom:55vh;
+    left:7vw;
+    
+    visibility: visible;
+    background-color:var(--header-background);
+}
+div.portfolio h1{
+    position:fixed;
+    bottom:25vh;
+    left:7vw;
+    
+    visibility: visible;
+    background-color: var(--header-background);
+}
+div.schedule h1{
+    position:fixed;
+    bottom:25vh;
+    left:75vw;
+    
+    visibility: visible;
+    background-color:var(--header-background);
+}
+div.contact h1{
+    position: fixed;
+    bottom:55vh;
+    left:73vw;
+    
+    visibility: visible;
+    background-color:var(--header-background);
+}
+div.introduction ,div.assingment ,div.portfolio ,div.schedule, div.contact{
+    position:absolute;
+    height:fit-content;
+    width:fit-content;
+    visibility:hidden;
+    border-radius: 5px;
+}
+div.introduction{
+    left:30vw;
+    top:30vh;
+    right:30vw;
+    bottom:30vh;
+}
+div.assingment{
+    left:40vw;
+    top:45vh;
+    right:40vw;
+    bottom:40vh;
+}
+div.portfolio{
+    left:30vw;
+    top:40vh;
+    right:30vw;
+    bottom:40vh;
+}
+div.schedule{
+    left:33vw;
+    top:30vh;
+    right:30vw;
+    bottom:30vh;
+}
+div.contact{
+    left:45vw;
+    top:50vh;
+    right:40vw;
+    bottom:40vh;
+}
+/*Font, Color*/
+
+p{
+    font-family:"Quicksand";
+    color: black;
+}
+
+ul,ol{
+    font-weight:bolder;
+    color: black;
+}
+
+
+/*Text*/
+h1{
+    text-transform:uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow: #FC0 1px 0 10px;
+}
+
+/*Paragraph*/
+p{
+    line-height:150%;
+    text-align:center;
+}
+
+/*Link*/
+a{
+    font-family:"Quicksand";
+    text-decoration: none;
+    font-style:normal;
+}
+a:hover{
+    font-style:oblique;
+    text-decoration: underline;
+}
+/*List*/
+div.navbar li{
+    display: inline;
+    margin-right:25px;
+    background-image:url(../img/brightness_5_s.png);
+    /* I couldnt get it to work without the below code I found online. Aplogies if this is incorrect*/
+    background-repeat:no-repeat;
+    background-position:left;
+    padding-left:24px;
+}
+div.navbar ul{
+    display: flex;
+}
+
+/*Background*/
+body{
+    background-image:url('../img/hubbel_art_blackhole.jpg');
+    background-size:cover;
+}
+footer{
+    background-color:var(--default-background);
+}
+div.navbar{
+    background-color:var(--default-background);
+}
+/*Border*/
+div.portfolio, div.contact, div.assingment, div.schedule, div.introduction{
+    border-right:3px solid #fff;
+    border-bottom:3px solid #fff;
+    background-color:var(--default-background);
+}
+div.contact{
+    padding-left:20px;
+    padding-right:20px;
+}
+div.navbar li{
+    border-radius:25px;
+}
+h1{
+    border-radius:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Selector Practice*/
+p::first-letter{
+    font-size:larger;
+}
+div.portfolio p:first-of-type{
+    box-shadow:5px 5px 5px black;
+}
+tr:nth-child(2n){
+    background-color:#a3a394;
+}
+div.schedule thead{
+    background-color:#a3a394;
+}
+/*Table*/
+div.schedule table{
+    border:black;
+    padding:5px;
+    vertical-align:middle;
+    empty-cells:show;
+    border-collapse:collapse;
+    background-color: #c8c8b6;
+}
+
+/*Transformation rule*/
+h1{
+    transition:all 1s ease-out;
+}
+div.introduction:hover, div.assingment:hover, div.schedule:hover, div.portfolio:hover, div.contact:hover{
+    visibility: visible;
+}
+div.introduction h1:hover, div.assingment h1:hover, div.schedule h1:hover, div.portfolio h1:hover, div.contact h1:hover{
+    opacity: 1;
+}
+/*Other*/
+h1{
+    opacity:0.6;
+    background-image:linear-gradient(black,grey);
+}
