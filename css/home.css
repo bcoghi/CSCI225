@@ -207,8 +207,9 @@ div.schedule table{
 }
 
 /*Transformation rule*/
-h1{
-    transition:all 1s ease-out;
+div{
+    transition:all 1s ease-in;
+    transition:all 3s ease-out
 }
 div.introduction:hover, div.assingment:hover, div.schedule:hover, div.portfolio:hover, div.contact:hover{
     visibility: visible;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Coversion Calculation</title>
+</head>
+<body>
+    <div>
+        <h1>Unit Conversion Calculator</h1>
+        <div>
+            <label for="input">Input</label>
+            <input type="number" name="input" id="input">
+            <select id="sinput">
+                <option value="ft">Foot</option>
+                <option value="in">Inch</option>
+                <option value="m">Meter</option>
+                <option value="au">AU</option>
+            </select>
+            =
+            <label for="output">Output</label>
+            <input type="number" name="output" id="output" readonly>
+            <select id="soutput">
+                <option value="ft">Foot</option>
+                <option value="in">Inch</option>
+                <option value="m">Meter</option>
+                <option value="au">AU</option>
+            </select>
+
+            <!--<button id="calculate">Calculate</button>-->
+            <input type="button" id="calculate" value="Calculate">
+            <script>
+                const input = document.querySelector('#input');
+                const output = document.querySelector('#output');
+
+                function calcLength(){
+                    console.log("clicked");
+                    const inUnit = document.querySelector('#sinput');
+                    const outUnit = document.querySelector('#soutput');
+
+                    console.log(inUnit.selectedIndex);
+                    console.log(outUnit.selectedIndex);
+
+                    var inInd = inUnit.selectedIndex;
+                    var outInd = outUnit.selectedIndex;
+                    var v1 = parseFloat(input.value);
+
+                    var u1 = 12;
+                    var u2 = 12;
+                    switch(inInd){
+                        case 0:
+                            u1 = 12;
+                            break;
+                        case 1:
+                            u1 = 1;
+                            break;
+                        case 2:
+                            u1 = 39.3701;
+                            break;
+                        case 3:
+                            u1 = 5889679948464.6;
+                            break;
+                    }
+                    switch(outInd){
+                        case 0:
+                            u2 = 12;
+                            break;
+                        case 1:
+                            u2 = 1;
+                            break;
+                        case 2:
+                            u2 = 39.3701;
+                            break;
+                        case 3:
+                            u2 = 5889679948464.6;
+                            break;
+                    }
+                    output.value = (v1 * u1)/u2;
+                }
+                var calc = document.getElementById('calculate');
+                calc.addEventListener("click", calcLength, false);
+            </script>
+        </div>
+    </div>
+</body>
+</html>
